@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="/component/sidebar.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/component/sidebar.js" defer></script>
+  </head>
+  <body>
+    <div id="layout-placeholder"></div>
+    <div class="main-container">
+      <main class="main-content">
+        <div class="content-header">
+          <h2 class="page-title">Usuarios</h2>
+          <p class="page-description">Gestion de usuarios del sistemas</p>
+        </div>
+
+        <div class="usuarios-actions">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Buscar Usuarios"
+          />
+          <button class="btn-agregar">+Agregar Usuarios</button>
+        </div>
+
+        <section class="content-section">
+          <div class="section-card">
+            <h3 class="section-title">Lista de usuarios</h3>
+            <table class="usuarios-table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Nombre</th>
+                  <th>Emails</th>
+                  <th>Rol</th>
+                  <th>Estado</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>Juan Pérez</td>
+                  <td>juan@email.com</td>
+                  <td>Administrador</td>
+                  <td><span class="badge badge-activo">Activo</span></td>
+                  <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-eliminar">Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>002</td>
+                  <td>María López</td>
+                  <td>maria@email.com</td>
+                  <td>Editor</td>
+                  <td><span class="badge badge-activo">Activo</span></td>
+                  <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-eliminar">Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>003</td>
+                  <td>Carlos Ruiz</td>
+                  <td>carlos@email.com</td>
+                  <td>Viewer</td>
+                  <td><span class="badge badge-inactivo">Inactivo</span></td>
+                  <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-eliminar">Eliminar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
