@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+    <link rel="stylesheet" href="/component/sidebar.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/component/sidebar.js" defer></script>
+  </head>
+  <body>
+    <div id="layout-placeholder"></div>
+    <div class="main-container">
+      <main class="main-content">
+        <div class="content-header">
+          <h2 class="page-title">Productos</h2>
+          <p class="page-descriprtion">Gestion de productos</p>
+        </div>
+        <div class="productos-actions">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Buscar producto..."
+          />
+          <button class="btn-agregar">+ Agregar Producto</button>
+        </div>
+        <section class="content-section">
+          <div class="section-card">
+            <h3 class="section-title">Lista de Productos</h3>
+            <table class="productos-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Categoría</th>
+                  <th>Precio</th>
+                  <th>Stock</th>
+                  <th>Estado</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>Laptop Dell XPS</td>
+                  <td>Electrónica</td>
+                  <td>$1,200.00</td>
+                  <td>15</td>
+                  <td><span class="badge badge-activo">Disponible</span></td>
+                  <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-eliminar">Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>002</td>
+                  <td>Mouse Logitech</td>
+                  <td>Periféricos</td>
+                  <td>$35.00</td>
+                  <td>50</td>
+                  <td><span class="badge badge-activo">Disponible</span></td>
+                  <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-eliminar">Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>003</td>
+                  <td>Teclado Mecánico</td>
+                  <td>Periféricos</td>
+                  <td>$89.00</td>
+                  <td>0</td>
+                  <td><span class="badge badge-inactivo">Agotado</span></td>
+                  <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-eliminar">Eliminar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

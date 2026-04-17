@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/component/sidebar.css" />
+    <script src="/component/sidebar.js" defer></script>
+  </head>
+  <body>
+    <div id="layout-placeholder"></div>
+
+    <div class="main-container">
+      <main class="main-content">
+        <!-- Encabezado -->
+        <div class="content-header">
+          <h2 class="page-title">Dashboard</h2>
+          <p class="page-description">Vista general del sistema</p>
+        </div>
+
+        <!-- Tarjetas de estadísticas -->
+        <section class="stats-section">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">👥</div>
+              <div class="stat-info">
+                <h3 class="stat-number">1,234</h3>
+                <p class="stat-label">Usuarios</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">📦</div>
+              <div class="stat-info">
+                <h3 class="stat-number">567</h3>
+                <p class="stat-label">Productos</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">💰</div>
+              <div class="stat-info">
+                <h3 class="stat-number">$12,345</h3>
+                <p class="stat-label">Ventas</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">📈</div>
+              <div class="stat-info">
+                <h3 class="stat-number">89%</h3>
+                <p class="stat-label">Crecimiento</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Actividad reciente -->
+        <section class="content-section">
+          <div class="section-card">
+            <h3 class="section-title">Actividad Reciente</h3>
+            <div class="activity-list">
+              <div class="activity-item">
+                <div class="activity-icon">📝</div>
+                <div class="activity-content">
+                  <p class="activity-text">Nuevo usuario registrado</p>
+                  <span class="activity-time">Hace 5 minutos</span>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <div class="activity-icon">🛒</div>
+                <div class="activity-content">
+                  <p class="activity-text">Venta completada #1234</p>
+                  <span class="activity-time">Hace 15 minutos</span>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <div class="activity-icon">📦</div>
+                <div class="activity-content">
+                  <p class="activity-text">Producto actualizado</p>
+                  <span class="activity-time">Hace 1 hora</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ventas</title>
+    <link rel="stylesheet" href="/component/sidebar.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/component/sidebar.js" defer></script>
+  </head>
+  <body>
+    <div id="layout-placeholder"></div>
+    <div class="main-container">
+      <main class="main-content">
+        <div class="content-header">
+          <h2 class="page-title">Ventas</h2>
+          <p class="page-description">Gestion de ventas del sistemas</p>
+        </div>
+        <section class="stats-section">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">💰</div>
+              <div class="stat-info">
+                <h3 class="stat-number">$25,818</h3>
+                <p class="stat-label">Total Venta</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🛒</div>
+              <div class="stat-info">
+                <h3 class="stat-number">18</h3>
+                <p class="stat-label">Pedidos</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">📈</div>
+              <div class="stat-info">
+                <h3 class="stat-number">$818</h3>
+                <p class="stat-label">Promedio de Ventas</p>
+              </div>
+            </div>
+          </div>
+          <section class="content-section">
+            <div class="section-card">
+              <h3 class="section-title">Historial de Ventas</h3>
+              <table class="ventas-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Cliente</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#1001</td>
+                    <td>Juan Pérez</td>
+                    <td>Laptop Dell XPS</td>
+                    <td>1</td>
+                    <td>$1,200.00</td>
+                    <td>16/04/2026</td>
+                    <td><span class="badge badge-activo">Completada</span></td>
+                  </tr>
+                  <tr>
+                    <td>#1002</td>
+                    <td>María López</td>
+                    <td>Mouse Logitech</td>
+                    <td>2</td>
+                    <td>$70.00</td>
+                    <td>15/04/2026</td>
+                    <td><span class="badge badge-activo">Completada</span></td>
+                  </tr>
+                  <tr>
+                    <td>#1003</td>
+                    <td>Carlos Ruiz</td>
+                    <td>Teclado Mecánico</td>
+                    <td>1</td>
+                    <td>$89.00</td>
+                    <td>14/04/2026</td>
+                    <td><span class="badge badge-inactivo">Pendiente</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

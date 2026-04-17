@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configuracion</title>
+    <link rel="stylesheet" href="/component/sidebar.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/component/sidebar.js" defer></script>
+  </head>
+  <body>
+    <div id="layout-placeholder"></div>
+    <div class="main-container">
+      <main class="main-content">
+        <div class="content-header">
+          <h2 class="page-title">Configuración</h2>
+          <p class="page-description">Ajustes generales del sistema</p>
+        </div>
+        <section class="content-section">
+          <div class="section-card">
+            <h3 class="section-title">Información General</h3>
+            <form class="config-form">
+              <div class="form-group">
+                <label for="nombre-sistema">Nombre del Sistema</label>
+                <input
+                  type="text"
+                  id="nombre-sistema"
+                  class="form-input"
+                  value="Fabian Arteaga"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email-admin">Email del Administrador</label>
+                <input
+                  type="email"
+                  id="email-admin"
+                  class="form-input"
+                  value="fabianarte121@gmail.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="idioma">Idioma</label>
+                <select id="idioma" class="form-input">
+                  <option value="es">Español</option>
+                  <option value="en">Inglés</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" class="form-input" rows="4">
+              Panel administrativo del sistema</textarea
+                >
+              </div>
+
+              <button type="submit" class="btn-guardar">Guardar Cambios</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
